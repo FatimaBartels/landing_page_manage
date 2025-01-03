@@ -7,7 +7,7 @@ btn.addEventListener("click", () => {
   nav.classList.toggle("hidden");
 });
 
-/* slideshow testimonials */
+/* slideshow testimonials mobile view */
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -22,7 +22,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("slides");
+  let slides = document.getElementsByClassName("myslide");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
