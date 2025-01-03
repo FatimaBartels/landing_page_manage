@@ -629,20 +629,16 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
 }
 
 .block {
@@ -992,20 +988,23 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+/* dot slideshow*/
+
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  background-color: #ece6e6;
+  border: 1px solid #f95454e4;
+  border-radius: 80%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #f25f3a;
 }
 
 .hover\:bg-brightRedLight:hover {
@@ -1034,10 +1033,6 @@ body {
 }
 
 @media (min-width: 480px) {
-  .sm\:flex {
-    display: flex;
-  }
-
   .sm\:hidden {
     display: none;
   }
@@ -1134,11 +1129,5 @@ body {
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-}
-
-@media (min-width: 976px) {
-  .lg\:hidden {
-    display: none;
   }
 }
